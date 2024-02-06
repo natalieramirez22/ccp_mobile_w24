@@ -1,0 +1,37 @@
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: #f3dfaf;
+    color: #333333;
+}
+
+nav a:hover, .active-page {
+    background-color: rgb(243, 184, 97);
+    color: #9f1b1b;
+}
+
+nav a:focus {
+    outline: 2px solid #ffa500;
+}
+
+.active-page {
+    font-weight: bold;
+    text-decoration: underline
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        grid-template-columns: 1fr;
+    }
+}
