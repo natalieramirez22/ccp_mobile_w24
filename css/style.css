@@ -9,12 +9,12 @@ body {
 h1 {
     text-align: center;
     font-weight: bold;
-    color: #ff4040;
+    color: #003153;
 }
 
 h2 {
     text-align: center;
-    color: #ff6b6b;
+    color: #06558d;
 }
 
 nav ul {
@@ -31,35 +31,22 @@ nav a {
     justify-content: center;
     align-items: center;
     padding: 15px;
-    background-color: #ff6b6b ;
-    color: #f3dfaf;
+    background-color: #06558d;
+    color: #ffffff;
 }
 
 nav a:hover, .active-page {
-    background-color: #ff4040;
+    background-color: #003153;
     color: #ffffff;
 }
 
 nav a:focus {
-    outline: 2px solid #ffa500;
+    outline: 2px solid #1098f8;
 }
 
 .active-page {
     font-weight: bold;
     text-decoration: underline
-}
-
-/* img { 
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-} */
-
-.image-grid {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 20px;
 }
 
 .image-grid img {
@@ -84,4 +71,27 @@ nav a:focus {
     nav ul {
         grid-template-columns: 1fr;
     }
+}
+
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.skip-link:focus {
+    position: relative;
+    left: auto;
+    top: auto;
+    width: auto;
+    height: auto;
+    overflow: auto;
+    background-color: #06558d;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    z-index: 100;
 }
