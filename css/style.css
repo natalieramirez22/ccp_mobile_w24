@@ -49,21 +49,50 @@ nav a:focus {
     text-decoration: underline
 }
 
-.image-grid img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
+img {
+    margin: auto;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.image-grid-recipes {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px; 
+    border-radius: 20px;
 }
 
 @media (min-width: 768px) {
+    .image-grid-recipes {
+        grid-template-columns: repeat(2, 1fr);
+        border-radius: 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .image-grid-recipes {
+        grid-template-columns: repeat(3, 1fr);
+        border-radius: 20px;
+    }
+}
+
+.image-grid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+} 
+
+@media (min-width: 768px) {
     .image-grid {
-        grid-template-columns: repeat(2, 1fr); /* Two columns per row for medium screens */
+        grid-template-columns: repeat(2, 1fr);
+        border-radius: 20px;
     }
 }
 
 @media (min-width: 1200px) {
     .image-grid {
-        grid-template-columns: repeat(3, 1fr); /* Three columns per row for large screens */
+        grid-template-columns: repeat(3, 1fr); 
+        border-radius: 20px;
     }
 }
 
@@ -91,6 +120,7 @@ nav a:focus {
     overflow: auto;
     background-color: #06558d;
     color: #ffffff;
+    padding: 10px;
     padding: 10px;
     text-align: center;
     z-index: 100;
